@@ -14,3 +14,17 @@ aws cloudformation describe-stacks --stack-name demoserverstack
 
 
 -->
+<!-- 
+
+
+      #from port80 to port 80 i want to traffic everywhere
+      SecurityGroupIngress:
+      - IpProtocol: tcp
+        FromPort: 80
+        ToPort: 80
+        CidrIp: 0.0.0.0/0
+      SecurityGroupEgress:
+      - IpProtocol: tcp
+        FromPort: 80
+        ToPort: 80
+        CidrIp: 0.0.0.0/0 -->
